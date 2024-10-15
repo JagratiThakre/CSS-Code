@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #container div{
+            background-color: lightgreen;
+            color: red;
+            width: 100px;
+            margin: 10px;
+            height: 300px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        #container{
+            background-color: red;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em 2em;
+        }
+        #container div:nth-child(1){
+            align-self: center;
+            flex-grow:1;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>d</div>
+</body>
+
+</html>
